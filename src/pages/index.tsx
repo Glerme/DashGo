@@ -1,11 +1,34 @@
 import { NextPage } from 'next';
 
-const Home: NextPage = () => {
+import { Flex, Button, Stack } from '@chakra-ui/react';
+
+import Input from '../components/Form/Input';
+
+const SingIn: NextPage = () => {
   return (
-    <div>
-      <h1 style={{ color: 'white' }}>Hello World</h1>
-    </div>
+    <>
+      <Flex w="100vw" h="100vh" alignItems="center" justifyContent="center">
+        <Flex
+          as="form"
+          width="100%"
+          maxWidth={360}
+          bg="gray.800"
+          p="8"
+          borderRadius={8}
+          flexDir="column"
+        >
+          <Stack spacing="4">
+            <Input name="email" type="email" placeholder="Email" />
+
+            <Input name="password" type="password" placeholder="Senha" />
+          </Stack>
+          <Button type="submit" marginTop="6" colorScheme="pink" size="lg">
+            Entrar
+          </Button>
+        </Flex>
+      </Flex>
+    </>
   );
 };
 
-export default Home;
+export default SingIn;
