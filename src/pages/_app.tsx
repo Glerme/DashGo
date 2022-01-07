@@ -10,7 +10,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Head>
-        <title>NextJS Starter</title>
+        <title>Dashgo</title>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
