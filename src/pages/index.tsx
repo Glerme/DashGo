@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Router from 'next/router';
 
 import { Flex, Button, Stack } from '@chakra-ui/react';
 
@@ -22,7 +23,13 @@ const SingIn: NextPage = () => {
 
             <Input name="password" type="password" placeholder="Senha" />
           </Stack>
-          <Button type="submit" marginTop="6" colorScheme="pink" size="lg">
+          <Button
+            type="button"
+            marginTop="6"
+            colorScheme="pink"
+            size="lg"
+            onClick={() => Router.push('dashboard')}
+          >
             Entrar
           </Button>
         </Flex>

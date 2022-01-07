@@ -12,13 +12,13 @@ const SideBar: React.FC = () => {
     <Box as="aside" w="64" mr="8">
       <Stack spacing="12" align="flex-start">
         <NavSection title="GERAL">
-          <Link display="flex" align="center" color="pink.400">
+          <Link display="flex" align="center" color="pink.400" href="/">
             <Icon as={RiDashboardLine} fontSize="20" />
             <Text ml="4" fontWeight="medium">
               Dashboard
             </Text>
           </Link>
-          <Link display="flex" align="center" color="pink.400">
+          <Link display="flex" align="center" color="pink.400" href="/users">
             <Icon as={RiContactsLine} fontSize="20" />
             <Text ml="4" fontWeight="medium">
               Usuários

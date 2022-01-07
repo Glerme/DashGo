@@ -14,6 +14,8 @@ import {
   Tr,
 } from '@chakra-ui/react';
 
+import Router from 'next/router';
+
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
 import Header from '../../components/Header';
@@ -39,6 +41,7 @@ const UserList: React.FC = () => {
               fontSize="sm"
               colorScheme="pink"
               leftIcon={<Icon as={RiAddLine} fontSize="20" />}
+              onClick={() => Router.push('/users/create')}
             >
               Criar novo
             </Button>
